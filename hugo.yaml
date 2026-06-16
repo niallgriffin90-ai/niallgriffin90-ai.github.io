@@ -1,0 +1,69 @@
+baseURL: "https://example.org/"
+languageCode: "en-ie"
+title: "Niall Griffin"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+
+pagination:
+  pagerSize: 5
+
+minify:
+  minifyOutput: true
+
+params:
+  env: production
+  description: "Notes on building and learning with AI — from an accountant's perspective."
+  author: "Niall Griffin"
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowToc: true
+  TocOpen: false
+
+  homeInfoParams:
+    Title: "Hello 👋"
+    Content: >
+      I'm Niall — an accountant who got curious about AI and started building
+      things with it. This is where I write about what I'm making, the tools and
+      models I'm trying, and where I reckon this is all heading. No schedule and
+      no grand plan, just genuine fascination, documented as I go.
+
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/niall-griffin-68220b21/"
+    - name: github
+      url: "https://github.com/niallgriffin90-ai"
+    - name: rss
+      url: "index.xml"
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20
+    - identifier: archive
+      name: Archive
+      url: /archives/
+      weight: 30
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 40
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
