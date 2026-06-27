@@ -20,6 +20,7 @@ params:
   defaultTheme: auto
   ShowReadingTime: true
   ShowShareButtons: true
+  ShareButtons: ["linkedin"]
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
