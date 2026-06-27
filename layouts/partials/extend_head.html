@@ -1,0 +1,27 @@
+{{/* Custom head additions for griffinai.dev */}}
+{{/* Person structured data (schema.org) — helps search engines and AI agents
+     identify the site author as a professional entity. */}}
+
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Niall Griffin",
+  "url": "https://griffinai.dev",
+  "jobTitle": "Financial Accountant (ACCA)",
+  "description": "ACCA-qualified financial accountant documenting what he builds, uses, and learns with AI across his work, projects, and community.",
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Accounting",
+    "Finance",
+    "AI Governance",
+    "Automation",
+    "Community and Voluntary Sector"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/niall-griffin-68220b21/"
+  ]
+}
+</script>
+{{ end }}
