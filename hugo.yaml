@@ -33,10 +33,20 @@ params:
   homeInfoParams:
     Title: "Hello 👋"
     Content: >
-      I'm Niall — an accountant who got curious about AI and started building
-      things with it. This is where I write about what I'm making, the tools and
-      models I'm trying, and where I reckon this is all heading. No schedule and
-      no grand plan, just genuine fascination, documented as I go.
+      This is a personal 'AI journey' Blog where I just use claude/codex/GLM to
+      assist me to create interesting stuff with AI such as this website, built
+      from scratch with absolutely zero coding skills. AI is the greatest
+      technological leap in my lifetime and I am throwing every bit of time I
+      have to learn as quickly and effectively as possible.
+
+      There is no roadmap, no plan, I just build stuff that I find interesting whenever time allows.
+      All just talking to AI and copy/paste the code in to the terminal. Incredible
+
+      The overall objective is to have a higher rate of learning of AI than the average person.
+
+      Lets see how we go!
+
+
 
   socialIcons:
     - name: linkedin
