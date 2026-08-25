@@ -106,21 +106,13 @@ structure.
 
 ---
 
-## Identity separation — two GitHub accounts
+## GitHub account
 
-Git carries two independent identities:
 
 1. Commit identity — the name and email stamped on each commit, visible in public
    history.
 2. Authentication identity — the GitHub account used to connect and push.
 
-`git config user.name` set *without* `--global` sets the commit identity for this
-project only, leaving the global (`groggs`) identity intact elsewhere. This was
-done deliberately to keep the blog's commit history under the professional name.
-
-Authentication is separate. VS Code's terminal used the system's stored
-credentials (`groggs99`) when pushing, producing a 403 Permission Denied: GitHub
-saw `groggs99` pushing to a repository owned by `niallgriffin90-ai` and refused.
 
 Fix: a Personal Access Token (a generated credential scoped to specific
 permissions) embedded in the remote URL —
@@ -145,12 +137,11 @@ enables the free hosting.
 - Pages created: About, Privacy, Disclaimer, Archive.
 - Post archetype created (new posts default to `draft: true`).
 - Source pushed to `niallgriffin90-ai/niallgriffin90-ai.github.io`.
-- Commit identity confirmed as the professional account, not `groggs`.
-
+- 
 ## Decisions made
 
-- Separate GitHub account (`niallgriffin90-ai`) for the blog, isolating it from
-  the existing `groggs` crypto/Web3 identity.
+- Separate GitHub account (`niallgriffin90-ai`) for the blog
+  
 - Per-repo Git identity rather than global, so only this project carries the new
   name.
 - Notes and drafts kept outside the project folder (anything inside it is part of
